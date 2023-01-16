@@ -118,6 +118,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    ('static', 'https://github.com/PacktPublishing/Django-4-by-Example/tree/main/Chapter01/mysite/blog/static'),
+    ('static', ''),
 )
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'supercellid.4910@gmail.com'
+EMAIL_HOST_PASSWORD = 'zxntadhxgarolhoo'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
